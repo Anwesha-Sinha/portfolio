@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- TODO: Change the font of website from google font(https://fonts.google.com/)(done) -->
+<!-- TODO: Change the color scheme as you like(done) -->
+<!-- TODO: Enable smooth scrolling -->
+<!-- TODO: Add scroll to top button -->
+<!-- TODO: Add a background image with 50% opacity on homepage (done)-->
+<!-- TODO: Update fields with your details (done)-->
+<head>
+    <title>Responsive Web Design Projects - Build a Personal Portfolio Webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="#welcome-section" class="nav-link">about</a>
+            <a href="#projects" class="nav-link">work</a>
+            <a href="#contacts" class="nav-link">contact</a>
+            <a href="#AboutMe" class="nav-link">About me</a>
+            <a href="#Education" class="nav-link">Education</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="welcome-section" class="main-section">
+            <h1>Hey I am Anwesha.</h1>
+         <div class="typewriter">   <p>a html developer</p> </div><!-- (done)TODO: Make this as typewriter effect - hint(https://github.com/tameemsafi/typewriterjs) -->
+            <p>a css developer</p>
+            <p>a js developer</p>
+            <a href="#contacts">&#8595;</a> 
+        </section>
+
+        <!-- TODO:(done) Introduce a About me section here and the button in nav tag: this section should have your image and a paragraph about you.-->
+           
+            <section id="AboutMe" class="main-section" style="text-align: center;">
+                <h2>About me:</h2>
+                <img src="cropped myself.jpg" height="300" width="200" title="Anwesha Sinha" style="align-content: center;"/>
+                <p>Hi Everyone! This is Anwesha Sinha. I am an active learner, a spirited person and a passionate doer.<br>
+                     Have good leadership abilities and team management qualities. Excellent in interpersonal communication.<br>
+                      I always believe in "Service Before Self" moto and want to do something big for my country.<br>
+                     Interested in Technology and am always eager to learn anything that is new and impactful.
+                
+                </p>
+             </section>
+       
+        <section id="Education" class="main-section" style="text-align: center;" >
+            <caption ><b>Education</b></caption>
+              <table border="2" style="margin: auto;">
+                <tr>
+                    <th>School/College</th>
+                    <th>degree</th>
+                    <th>percentage/CGPA</th>
+                    <th>year</th>
+                </tr>
+                <tr>
+                    <td>
+                        Delhi Public School<br> Siliguri
+                    </td>
+                    <td> class 10</td>
+                    <td>
+                        9.4 CGPA
+                    </td>
+                    <td>2016</td>
+                </tr>
+                <tr>
+                    <td>Delhi Public School<br>Siliguri</td>
+                    <td>class 12</td>
+                    <td>9.2 cgpa</td>
+                    <td>2018</td>
+                </tr>
+                <td>KIIT University<br> Bhubaneswar</td>
+                <td>B.tech</td>
+                <td>present 9.3 cgpa</td>
+                <td>2018-2022</td>
+
+            </table>
+
+
+
+        </section>
+
+        <section id="projects" class="main-section">
+            <h2>These are some of my projects..</h2>
+            <div id="projects-content">
+                <a href="https://codepen.io/FreeCodeCamp/pen/NNvBQW" class="project-tile"><img
+                        src="https://cloud.githubusercontent.com/assets/15967809/17642794/d084d718-6171-11e6-83fa-ede5d0a67ad2.png"
+                        alt="tribute page preview">
+                    Tribute page</a>
+                <a href="https://codepen.io/FreeCodeCamp/pen/ONjoLe" class="project-tile"><img
+                        src="https://cloud.githubusercontent.com/assets/15967809/17642771/7cd6a0c4-6171-11e6-87fb-915f6084d104.png"
+                        alt="random quote machine preview">Random quote machine</a>
+                <a href="https://codepen.io/FreeCodeCamp/pen/PNKdjo" class="project-tile"><img
+                        src="https://cloud.githubusercontent.com/assets/15967809/17642772/7d02406c-6171-11e6-8c79-40a2933163dc.png"
+                        alt="javascript calculator preview">JavaScript calculator</a>
+                <a href="https://codepen.io/FreeCodeCamp/pen/mVEJag" class="project-tile"><img
+                        src="https://cloud.githubusercontent.com/assets/15967809/17642773/7d08cb94-6171-11e6-8c45-22e7cf64683e.png"
+                        alt="map data across the globe preview">Map data across the globe</a>
+                <a href="https://codepen.io/FreeCodeCamp/pen/wGqEga" class="project-tile"><img
+                        src="https://cloud.githubusercontent.com/assets/15967809/17642774/7d091806-6171-11e6-8d47-ecf2f2833fe2.png"
+                        alt="wikipedia viewer preview">Wikipedia viewer</a>
+                <a href="https://codepen.io/FreeCodeCamp/pen/KzXQgy" class="project-tile"><img
+                        src="https://cloud.githubusercontent.com/assets/15967809/17642775/7d354304-6171-11e6-8b56-66eee4681d88.png"
+                        alt="tic tac toe game preview">Tic Tac Toe game</a>
+            </div>
+            <a href="https://github.com/" target="_blank" id="show-all">show all</a>
+            <!-- TODO: show all button should re-direct you to github in new tab(done) -->
+        </section>
+
+        <!-- TODO:(done) Introduce a contact me form here, (name, email, mobile, reason to contact?) - onclick -> submit, store value in localStorage -->
+            <section style="text-align: center;">
+                <form id="form">
+                <h2>Contact me:-</h2>
+               <div > <label for="name"><b>*Name:&nbsp;</b></label>
+                <input type="text"  id="name" name="name" placeholder=" your full name "   size="30" required></div><br>
+               <div > <label for="email"><b>*Email:&nbsp;</b></label>
+                <input type="email" id="email" name="email" placeholder="abc@gmail.com"  size="40" required></div><br>
+              <div>  <label for="mobile"><b>*Mobile:&nbsp;</b></label>
+                <input type="tel" id="mobile" name="mobile" placeholder=" your mobile number" size="40" required></div><br>
+             <div>  <label for="message"><b>*Reason to contact:&nbsp;</b></label>
+                <textarea  id="message"  name="message" required>
+
+                </textarea></div><br>
+                <div id="buttons-row">
+                    <div class="buttons">
+                        <button type="submit" id="send">Submit</button>
+                    </div><br>
+                    <div class="buttons">
+                        <button id="reset">Reset</button>
+                    </div>
+                    </div>
+                </form>
+
+            </section>
+        <section id="contacts" class="main-section">
+            <h2>Let's work together...<i class="fab fa-facebook-square"></i></h2>
+            <p>How do you take your coffee?</p>
+            <!-- TODO: change all social link to use font-awesome icon(https://fontawesome.com/v4.7.0/get-started/) done -->
+            <div id="contacts-content">
+                <div id="fcbk"><a href="https://fontawesome.com/v4.7.0/get-started/ " target="_blank">Facebook</a></div>
+                <div id="github"><a href="https://fontawesome.com/v4.7.0/get-started/ " target="_blank" id="profile-link">GitHub</a>
+                </div>
+                <div id="twitter"><a href="https://fontawesome.com/v4.7.0/get-started/" target="_blank">Twitter</a></div>
+                <div id="email"><a href="https://fontawesome.com/v4.7.0/get-started/ " target="_blank">Send a mail</a></div>
+                <div id="tel"><a href="tel:555-555-5555" target="_blank">Call me</a></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!--<p><em>**This is just a fake portfolio.. All the projects and contact details given are not real..</em></p>-->
+        <p>© Copyright</p>
+    </footer>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+
+</html>
