@@ -1,26 +1,27 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   --theme-color: 77;
-  background-color: pink;
-background: url("bk img.jpg") no-repeat center center fixed;/*newly added*/
+  background-color:black;
+/*background: url("bk img.jpg") no-repeat center center fixed;/*newly added*/
 -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+ 
 
   margin: 0px;
   padding: 0px;
 }
 /*newly added todo typewriter*/
-.typewriter p{
+/*.typewriter p{
   
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
+ /* border-right: .15em solid orange; /* The typwriter cursor */
+ /* white-space: nowrap; /* Keeps the content on a single line */
+ /* margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+ /* letter-spacing: .15em; /* Adjust as needed */
   
-  animation: 
+ /* animation: 
    
    typing 3.5s steps(40,end),
     blink-caret .75s step-end infinite;
@@ -38,8 +39,26 @@ background: url("bk img.jpg") no-repeat center center fixed;/*newly added*/
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: orange; }
+}*/
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
 }
 
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
 
 
 header {
@@ -49,7 +68,7 @@ header {
   width: 100%;
   padding-top: 10px;
   z-index: 1;
-  background-color: yellowgreen;
+  background-color:blue;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -57,17 +76,21 @@ header {
 
 #navbar {
   margin-right: 20px;
+  color: black;
 }
 
 #navbar a {
   margin: 4vw;
   text-decoration: inherit;
   color: black;
+  font-style: italic;
+  
 }
 
 #welcome-section {
     padding: 45vh 0;
     text-align: center;
+    font-style: italic,;
 }
 
 h2 {
@@ -78,6 +101,7 @@ h2 {
 #welcome-section {
   min-height: 100px;
   text-align: center;
+  font-style: italic;
 }
 
 #projects {

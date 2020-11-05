@@ -1,47 +1,49 @@
-let sendButton = document.getElementById('send');
-let resetButton = document.getElementById('reset');
-let form = document.getElementById('form');
+var app=document.getElementById('typewriter');
+var typewriter= new Typewriter(app, {
+  strings: ['I am a Web Developer', 'I am a Martial Artist','A learner Always'],
+  autoStart: true,
+  loop: true
+});
 
 
-form.addEventListener('submit', function(e){
-    e.preventDefault();
-})
-
-resetButton.addEventListener('click', function(){
-  
-    let name = document.getElementById('name');
-   let email = document.getElementById('email');
-    let mobile = document.getElementById('mobile');
-    let message= document.getElementById('message');
-
-    name.value = '';
-    email.value = '';
-    mobile.value = '';
-    message.value='';
-})
-
-sendButton.addEventListener('click', function(e){
-    
-     let name = document.getElementById('name');
-     let email = document.getElementById('email');
-    let mobile = document.getElementById('mobile');
-    let message = document.getElementById('message');
-
-    name = name.value;
-    localStorage.setItem('name', name);
-
-    email = email.value;
-    localStorage.setItem('email', email);
-
-    mobile = mobile.value;
-    localStorage.setItem('mobile', mobile);
-
-    message = message.value;
-    localStorage.setItem('message', message);
-     
-
-}) 
+var mybutton = document.getElementById("myBtn");
 
 
+window.onscroll = function() {scrollFunction()};
 
+function scrollFunction() {
+  if (document.body.scrollTop > 650 || document.documentElement.scrollTop > 650) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
 
+function topFunction() {
+  document.body.scrollTop = 235;
+  document.documentElement.scrollTop = 235;
+}
+
+var button = document.getElementById("submit");
+button.addEventListener("click", submit);
+function submit(e) {
+ e.preventDefault();
+ var name= document.getElementById("name").value;
+ var email= document.getElementById("email").value;
+ var mobile= document.getElementById("mobile").value;
+ var reason= document.getElementById("reason").value;
+ if(name.length!=0 && email.length!=0 && mobile.length!=0 && reason.length!=0)
+ {
+      localStorage.setItem("Name", name);
+      localStorage.setItem("Email", email);
+      localStorage.setItem("Mobile", mobile);
+      localStorage.setItem("Reason", reason);
+      document.getElementById("name").value = " ";
+      document.getElementById("email").value = " ";
+      document.getElementById("mobile").value = " ";
+      document.getElementById("reason").value = " ";
+ }
+ else{
+   alert("Provide The Details in contact me form!");
+ }
+}
